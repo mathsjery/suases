@@ -1,0 +1,108 @@
+@import url(font-awesome.min.css);
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700");
+body{
+margin:0;
+background:#cccccc;  
+}
+.container{
+margin:0 auto;
+padding: 10px;     
+width:360px;
+background:#ffffff;
+position:relative; 
+top: 30px;    
+}
+.displayNone{
+ display:none;    
+}
+.logo-container .logo{
+max-width:200px;
+margin: auto;
+display: block;
+padding: 10px;  
+}
+.check-link .form-check,.check-link .pwd-link{
+display: inline-block;    
+}
+.check-link .pwd-link{
+float: right;    
+}
+.check-link .pwd-link a,.acc-link a{
+text-decoration: none;
+color: #000000;
+transition:color 2s;    
+}
+.check-link .pwd-link a:hover,.acc-link a:hover{
+color:#008600;  
+}
+.signIn,.signup,.rstpass{
+background:#008600;
+color: #ffffff;    
+}
+.acc-link p{
+text-align: center;    
+}
+@media screen and (max-width: 1680px) {
+
+
+}
+
+@media screen and (max-width: 1280px) {
+
+
+}
+
+@media screen and (max-width: 980px) {
+
+
+}
+
+@media screen and (max-width: 736px) {
+.container{
+margin:0;
+padding:30px 60px  60px  60px  60px;  width:100%;
+top: 0;    
+}   
+}
+
+@media screen and (max-height: 640px) {
+.container{
+padding:10px;        
+}
+.check-link .form-check,.check-link .pwd-link{
+display:list-item;
+list-style: none;
+}
+.check-link .pwd-link{
+float:none;
+text-align: center;    
+}    
+}
+
+@media screen and (max-width: 480px) {
+.container{
+padding:10px;        
+}
+.check-link .form-check,.check-link .pwd-link{
+display:list-item;
+list-style: none;
+}
+.check-link .pwd-link{
+float:none;
+text-align: center;    
+} 
+}
+@media screen and (max-width: 360px) {
+.container{
+padding:10px;        
+}
+.check-link .form-check,.check-link .pwd-link{
+display:list-item;
+list-style: none;
+}
+.check-link .pwd-link{
+float:none;
+text-align: center;    
+}
+}
+

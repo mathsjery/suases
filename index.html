@@ -1,0 +1,134 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>student Emailing system</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+<link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+<link rel="stylesheet" href="assets/css/main.css" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+</head>
+<body>
+    
+<!--login-->
+<div class="login" id="login">
+<div class="container">
+<div class="logo-container ">
+<img src="images/logo.png" class="img-fluid logo" alt="">
+</div>
+<div class="text-center">
+<h5>SUASES</h5>    
+<p>Login to your account</p>
+</div>
+<form class="form-group" role="form" method="POST" action="/login.php">
+<div class="form-group">
+<label class="" for="lemail">Enter Email</label>
+<div class="input-group">
+<input type="email" name="lemail" class="form-control" id="lemail"
+placeholder="jere@ses.ac.tz" required autofocus>
+</div>
+</div>
+<div class="form-group">
+<label class="" for="pwd">Enter Password</label>
+<div class="input-group">
+<input type="password" name="pwd" class="form-control" id="pwd"
+placeholder="password" required autofocus>
+</div>
+</div>
+<div class="check-link mb-3">
+<div class="form-check">
+<label class="form-check-label">
+<input class="form-check-input" name="remember" type="checkbox">
+<span>Remember me</span>
+</label>
+</div>
+<div class="pwd-link">
+<span><a href="#pwdReset" id="topwdReset">Forgot your password?</a></span>
+</div>
+</div>    
+<div class="form-group">
+<input type="submit" id="signIn" class="form-control signIn" value="LOGIN">
+</div>
+<div class="acc-link mb-3">
+<p>New member? <a href="#register" id="toRegister">Create account</a></p>
+</div>
+</form>
+</div>
+</div>
+
+<!--register-->
+<div class="register" id="register">
+<div class="container">
+<div class="logo-container ">
+<img src="images/logo.png" class="img-fluid logo" alt="">
+</div>
+<div class="text-center">
+<h5>SUASES</h5>    
+<p>Create An account</p>
+</div>
+<form class="form-group" role="form" method="POST" action="/register.php">
+<div class="form-group">
+<label class="" for="remail">Enter Email</label>
+<div class="input-group">
+<input type="email" name="remail" class="form-control" id="remail"
+placeholder="jere@ses.ac.tz" required autofocus>
+</div>
+</div>
+<div class="form-group">
+<label class="" for="rpwd">Enter Password</label>
+<div class="input-group">
+<input type="password" name="rpwd" class="form-control" id="rpwd"
+placeholder="password" required autofocus>
+</div>
+</div>
+<div class="form-group">
+<label class="" for="Crpwd">Confirm Your Password </label>
+<div class="input-group">
+<input type="password" name="Crpwd" class="form-control" id="Crpwd"
+placeholder="password" required autofocus>
+</div>
+</div> 
+<div class="form-group">
+<input type="submit" id="signup" class="form-control signup" value="REGISTER">
+</div>    
+<div class="acc-link mb-3">
+<p>Already a member? <a href="#login" id="tologin">Login</a></p>
+</div>
+</form>
+</div>
+</div>
+
+<!--reset password-->
+<div class="pwdReset" id="pwdReset">
+<div class="container">
+<div class="logo-container ">
+<img src="images/logo.png" class="img-fluid logo" alt="">
+</div>
+<div class="text-center">
+<h5>SUASES</h5>    
+<p>Reset Your Password</p>
+</div>
+<form class="form-group" role="form" method="POST" action="/rstpass.php">
+<div class="form-group">
+<label class="" for="rstpass">Enter Phone Number</label>
+<div class="input-group">
+<input type="tel" name="rstpass" class="form-control" id="rstpass"
+placeholder="+255 785 669 830" required autofocus>
+</div>
+</div>
+<div class="form-group">
+<input type="submit" id="rstpass" class="form-control rstpass" value="SEND NEW">
+</div>
+<div class="acc-link mb-3">
+<p>Not a member? <a href="#register" id="toRegister">Create account</a></p>
+</div>
+</form>
+</div>
+</div>
+    
+<!-- Scripts -->
+<script src="assets/js/bootstrap.min.js"></script>    
+<script src="assets/js/jquery-3.3.1.js"></script>    
+<script src="assets/js/main.js"></script>
+</body>
+</html>
