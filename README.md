@@ -1,4 +1,5 @@
 # suases
 login and registration user interface
-
-you're free to modify the project
+# features
+.Very responsive ui
+.Support all various browser even old browser 
